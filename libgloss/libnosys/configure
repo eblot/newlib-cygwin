@@ -2054,7 +2054,7 @@ case "${target}" in
 esac
 
 case "${target}" in
-  *-*-elf)
+  *-*-elf | *-*-eabi*)
         $as_echo "#define HAVE_ELF 1" >>confdefs.h
 
 

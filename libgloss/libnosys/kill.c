@@ -11,7 +11,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_kill, (pid, sig),
+_WEAK_DEFUN (_kill, (pid, sig),
         int pid  _AND
         int sig)
 {

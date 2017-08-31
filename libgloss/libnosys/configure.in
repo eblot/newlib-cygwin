@@ -88,7 +88,7 @@ esac
 
 dnl Make sure we know if elf format used
 case "${target}" in
-  *-*-elf)
+  *-*-elf | *-*-eabi*)
         AC_DEFINE(HAVE_ELF)
 
         AC_CACHE_CHECK([for .previous assembler directive],

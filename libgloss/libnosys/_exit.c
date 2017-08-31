@@ -4,9 +4,10 @@
 #include "config.h"
 #include <_ansi.h>
 #include <_syslist.h>
+#include "warning.h"
 
 _VOID
-_DEFUN (_exit, (rc),
+_WEAK_DEFUN (_exit, (rc),
 	int rc)
 {
   /* Default stub just causes a divide by 0 exception.  */

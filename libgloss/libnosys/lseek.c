@@ -11,7 +11,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_lseek, (file, ptr, dir),
+_WEAK_DEFUN (_lseek, (file, ptr, dir),
         int   file  _AND
         int   ptr   _AND
         int   dir)

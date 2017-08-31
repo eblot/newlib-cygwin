@@ -134,8 +134,8 @@ strcpy (char* dst, const char* src)
 #else
        "tst	r2, #0xff\n\t"
        "itet	ne\n\t"
-       "strneh	r2, [ip], #2\n\t"
-       "streqb	r2, [ip]\n\t"
+       "strhne	r2, [ip], #2\n\t"
+       "strbeq	r2, [ip]\n\t"
        "tstne	r2, #0xff00\n\t"
 #endif
        "bne	5b\n\t"
