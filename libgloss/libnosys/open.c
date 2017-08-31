@@ -11,7 +11,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_open, (file, flags, mode),
+_WEAK_DEFUN (_open, (file, flags, mode),
         char *file  _AND
         int   flags _AND
         int   mode)

@@ -15,7 +15,7 @@ extern int errno;
 struct timeval;
 
 int
-_DEFUN (_gettimeofday, (ptimeval, ptimezone),
+_WEAK_DEFUN (_gettimeofday, (ptimeval, ptimezone),
         struct timeval  *ptimeval  _AND
         void *ptimezone)
 {

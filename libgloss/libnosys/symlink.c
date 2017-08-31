@@ -11,7 +11,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_symlink, (path1, path2),
+_WEAK_DEFUN (_symlink, (path1, path2),
         const char *path1 _AND
         const char *path2)
 {

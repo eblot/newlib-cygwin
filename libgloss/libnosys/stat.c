@@ -13,7 +13,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_stat, (file, st),
+_WEAK_DEFUN (_stat, (file, st),
         const char  *file _AND
         struct stat *st)
 {

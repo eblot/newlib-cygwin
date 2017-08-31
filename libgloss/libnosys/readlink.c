@@ -12,7 +12,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_readlink, (path, buf, bufsize),
+_WEAK_DEFUN (_readlink, (path, buf, bufsize),
         const char *path _AND
         char *buf _AND
         size_t bufsize)

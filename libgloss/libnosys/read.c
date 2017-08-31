@@ -11,7 +11,7 @@ extern int errno;
 #include "warning.h"
 
 int
-_DEFUN (_read, (file, ptr, len),
+_WEAK_DEFUN (_read, (file, ptr, len),
         int   file  _AND
         char *ptr   _AND
         int   len)

@@ -41,4 +41,7 @@
   link_warning (name, \
                 #name " is not implemented and will always fail")
 
+#define  _WEAK_DEFUN(name, arglist, args)  __attribute__((weak)) name(args)
+#define  _WEAK_DEFUN_VOID(name)  __attribute__((weak)) name(_NOARGS)
+
 #endif /* __WARNING_H__ */
